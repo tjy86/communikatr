@@ -9,10 +9,10 @@ function go() {
 
   $.ajax({
   type: "POST",
-  url: "http://4eac.localtunnel.com/asdfasdfasdf",
-  data: { receiver: to, message: message, method: way }
+  url: "http://dcoates.fwd.wf/messages",
+  data: { to_details: to, message: message, type: way }
     }).done(function( msg ) {
-    alert('complete');
+    alert(msg);
 
   });
 }
